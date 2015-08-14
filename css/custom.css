@@ -38,6 +38,14 @@
 	color: #d6d6d6;
 }
 
+.list-group-item.active {
+	background-color: #124d8c;
+}
+
+.list-group-item.active:hover {
+	background-color: #124d8c;
+}
+
 .navbar-default {
 	background-color: #124d8c;
 	border-color: #124d8c;
