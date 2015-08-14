@@ -97,3 +97,9 @@
 		background-color: #124d8c;
 	}
 }
+
+@media (max-width: 767px) {
+	#logo {
+		width: 50%;
+	}
+}
