@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-9 col-md-8">
+      <img style="width:100%;" src="/images/RC-135_Rivet_joint.jpg" alttext="RC-135 Rivet Joint">
+    </div>
+    <div class="hidden-xs col-sm-3 col-md-4">
+      <div class="panel panel-default">
+        <h3 class="panel-heading" style="margin-top:0;"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Latest News</h3>
+        <ul class="list-group">
+          {% for post in site.posts %}
+          <a class="news-link list-group-item" href="{{ post.url | prepend: site.baseurl }}">
+            <h4>{{ post.title }}</h4>
+            <p class="hidden-sm">{{ post.excerpt }}</p>
+          </a>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

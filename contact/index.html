@@ -1,0 +1,47 @@
+---
+layout: single
+---
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Contact Details</h3>
+        </div>
+        <div class="panel-body">
+          <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:info@airframesystems.com">info@airframesystems.com</a>
+            <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +44 (0) 161 262 2300</p>
+            <p><span class="glyphicon glyphicon-home" aria-hidden="true"></span><br>
+              Airframe Systems Ltd.<br>
+              3000 Aviator Way<br>
+              Manchester<br>
+              M22 5TG<br>
+              United Kingdom
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="map" class="col-md-8" style="height:400px"></div>
+    </div>
+  </div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  function initialize() {
+    var latLang = new google.maps.LatLng(53.367409, -2.264928);
+    var mapCanvas = document.getElementById('map');
+    var mapOptions = {
+      center: latLang,
+      zoom: 14,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions)
+    var marker = new google.maps.Marker({
+      position: latLang,
+      map: map,
+      title: 'Airframe Systems'
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>

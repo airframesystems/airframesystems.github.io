@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="hidden-xs col-sm-3 col-md-3">
+    <div class="list-group">
+      {% for section in site.pages %}
+      {% if page.title == section.title %}
+      <a class="list-group-item active" href="{{ section.permalink }}">{{ section.title }}</a>
+      {% elsif page.categories[0] == section.categories[0] %}
+      <a class="list-group-item" href="{{ section.permalink }}">{{ section.title }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-9 col-md-9">
+    <h3 style="color:gray;margin-top:0;margin-bottom:0;">{{ page.categories[0] | upcase }}</h3>
+    <h1 style="margin-top:5px;" class="post-title">{{ page.title }}</h1>
+    <article class="post-content">
+      {{ content }}
+    </article>
+  </div>
+</div>

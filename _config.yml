@@ -1,0 +1,13 @@
+# Site settings
+title: Airframe Systems
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+    Airframe Systems is a company of highly motivated, experienced and professional aeronautical Engineers based in the United Kingdom with Worldwide aspiration. We are a multi disciplined, agile, proactive, and highly competitive company .
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://airframesystems.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+logo: "/images/large-logo.gif"
+
+# Build settings
+markdown: kramdown

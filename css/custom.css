@@ -1,0 +1,99 @@
+#logo {
+	width: 384px;
+}
+
+#logo-wrapper {
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+
+#pad-bottom {
+	padding: 30px;
+}
+
+#footer-bar {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	background-color: #124D8C;
+	overflow: auto;
+}
+
+#footer-bar {
+	color: #f9f9f9;
+}
+
+#footer-bar a {
+	color: #f9f9f9;
+}
+
+#footer-bar a:visited {
+	color: #f9f9f9;
+}
+
+#footer-bar a:hover {
+	text-decoration: none;
+	color: #d6d6d6;
+}
+
+.navbar-default {
+	background-color: #124d8c;
+	border-color: #124d8c;
+}
+.navbar-default .navbar-brand {
+	color: #f9f9f9;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #d6d6d6;
+}
+.navbar-default .navbar-text {
+	color: #f9f9f9;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #f9f9f9;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #d6d6d6;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #d6d6d6;
+	background-color: #124d8c;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #d6d6d6;
+	background-color: #124d8c;
+}
+.navbar-default .navbar-toggle {
+	border-color: #124d8c;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: #124d8c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #f9f9f9;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #f9f9f9;
+}
+.navbar-default .navbar-link {
+	color: #f9f9f9;
+}
+.navbar-default .navbar-link:hover {
+	color: #d6d6d6;
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #f9f9f9;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #d6d6d6;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #d6d6d6;
+		background-color: #124d8c;
+	}
+}

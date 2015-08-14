@@ -1,0 +1,83 @@
+<header class="site-header">
+
+<div id="logo-wrapper">
+  <a href="{{ '/' | site.baseurl }}">
+    <img id="logo" src="{{ site.logo | prepend: site.baseurl }}" alt="Airframe Systems">
+  </a>
+</div>
+
+<nav class="navbar navbar-static-top navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#page-links">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="page-links">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="/expertise/" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+          EXPERTISE<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% for page in site.pages %}
+            {% if page.categories contains 'expertise' %}
+            <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="/technology/" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+          TECHNOLOGY<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% for page in site.pages %}
+            {% if page.categories contains 'technology' %}
+            <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="/solutions/" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+          SOLUTIONS<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% for page in site.pages %}
+            {% if page.categories contains 'solutions' %}
+            <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about/">ABOUT</a></li>
+        <li><a href="/news/">NEWS</a></li>
+        <li><a href="/careers/">CAREERS</a></li>
+        <li><a href="/contact/">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+<div class="nav-wrapper">
+<nav>
+  <a class="page-link nav-left" href="/expertise/">EXPERTISE</a>
+  <a class="page-link nav-left" href="/technology/">TECHNOLOGY</a>
+  <a class="page-link nav-left" href="/solutions/">SOLUTIONS</a>
+  <a class="page-link nav-right" href="/about/">ABOUT</a>
+  <a class="page-link nav-right" href="/news/">NEWS</a>
+  <a class="page-link nav-right" href="/careers/">CAREERS</a>
+  <a class="page-link nav-right" href="/contact/">CONTACT</a>
+</nav>
+</div>
+-->
+
+</header>
